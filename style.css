@@ -51,11 +51,15 @@ header img{
     width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     
 } 
 .navcommad a:hover{
-    text-decoration: underline;
+    color: #f0f0f0;
+}
+.navcommad li:hover{
+  text-decoration: underline;
+    background-color: #bbbbbb;
 }
  header{
 	/* position: fixed; */
@@ -92,22 +96,29 @@ header img{
         
 
     }
-    .navcommad{
+    .active #icons::before{
+        content: "\2715";
+    }
+    nav ul{
         position: fixed;
         left:-100%;
         top:5%;
         flex-direction: column;
-        background-color:#878787 ;
+        background-color:#903a3a ;
         width: 100%;
         text-align: center;
-        transition: 025s;
+        transition: 0.25s;
 
     }
-    .navcommad li{
+    nav li{
     padding: 3px 0 ;
     }
-    .navcommad li:hover{
+    
+    nav.active ul{
+        left: 0%;
+        width: 200px;
         background: #cacaca;
+        color: rgb(229, 229, 229);
     }
 }
 
