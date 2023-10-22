@@ -7,13 +7,14 @@
     list-style: none;
     scroll-behavior: smooth;
 
+
 }
 
 .container {
 
     background-image: url(img/home.png);
 
-    background-position-y: -10vh;
+    background-position-y: -2vh;
     background-repeat: no-repeat;
     width: 100vw;
     height: 140vh;
@@ -43,7 +44,7 @@ header img {
 
 .logo a {
 
-    background-color: rgb(186, 186, 186);
+
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -66,6 +67,10 @@ header img {
 
 }
 
+.lastelement:hover {
+    background: rgb(183, 183, 183);
+}
+
 header {
     /* position: fixed; */
     top: 0;
@@ -79,7 +84,7 @@ header {
 .lastelement {
 
     padding: 10px;
-    background-color: #FA600A;
+
     border-radius: 3vh;
 }
 
@@ -154,7 +159,7 @@ header {
     position: relative;
     top: 20vh;
     padding: 1vh;
-    background-color: #FA600A;
+    background-color:#FA600A ;
     border-radius: 0 3vh 3vh 0;
     position: fixed;
 }
@@ -220,8 +225,56 @@ h1 {
     border-radius: 5vh;
 }
 
+/**************/
+/* Style for the avis section */
+
+.avis {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style for individual Box elements */
+.Box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    /* Adjust the width based on your layout */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style for client images */
+.clientsatisfait img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style for client names */
+.clientsatisfait h3 {
+    font-size: 18px;
+}
+
+/* Style for star ratings */
+.checked {
+    color: orange;
+    font-size: 16px;
+}
+
+/* Style for client reviews */
+.Box p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
 .lasthome {
-    background-color: #D9D9D9;
+
     margin-top: 10vh;
     padding: 10vh;
     display: flex;
@@ -230,8 +283,10 @@ h1 {
     gap: 10vh
 }
 
+/**************/
+/*
 .avis {
-    /*section contenant avis*/
+    
 
     display: flex;
     justify-content: space-around;
@@ -246,9 +301,15 @@ h1 {
 
 
 }
+.clientsatisfait img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
 
 .checked {
-    /* stars*/
+    
     color: orange;
 }
 
@@ -266,7 +327,7 @@ h1 {
     width: 300px;
     height: 200px;
 
-}
+}*/
 
 /******************************/
 /*
@@ -290,62 +351,73 @@ background: #FFF;
     border: 1px solid #FA600A;
 }
 */
+/*******partie FAQS**********/
 .containfaq {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #9f9f9f;
     color: #ffffff;
-    
+
     width: 80%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    padding-bottom:4rem ;
+    padding-bottom: 4rem;
     border-radius: 0.7rem;
-    
+
 }
-.title{
+
+.title {
     font-size: 3rem;
     margin: 2rem 0rem;
 
 }
-.faq{
-    max-width:700px;
+
+.faq {
+    max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff;
     cursor: pointer;
 }
-.question{
+
+.question {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.question h3{
+
+.question h3 {
     font-size: 1.8rem;
 }
-.answer p{
+
+.answer p {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.4rem;
     opacity: 0.7;
 }
-.answer{
+
+.answer {
     max-height: 0;
     overflow: hidden;
-   transition:max-height 1.4s ease;
+    transition: max-height 1.4s ease;
 }
-.faq .active .answer{
+
+.faq .active .answer {
     max-height: 300px;
 }
+
 .faq.active svg {
     transform: rotate(180deg);
 
 }
-svg{
+
+svg {
     transition: transform 0.5s ease-in;
 }
+
 /*****************************/
 .main {
     display: flex;
@@ -416,4 +488,104 @@ footer .logofooter img {
 footer h5 {
 
     text-align: center;
+  
+    
+}
+  /******S'INSCRIRE******/
+  .containerinscrire{
+    background-color: #bcbbbb;
+  }
+  /**********carte abbonement***********/
+.subscription-section{
+    text-align: center;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 100px rgba(12, 10, 7, 0.995);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #FA600A;
+}
+
+.card img {
+    max-width: 90%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.subscription-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*************FORMULAIRE******************/
+.backformulaire{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/back.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.formulaire {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20vh auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff78;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: 80%;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 3px solid #000000;
+    border-radius: 6px;
+}
+button{
+    width: 100%;
+   height: 5.6vh;
+   border-radius: 6px;
+   border: 2px solid #000;
+   background: #000;
+   color:white;
+   margin-top: 10px;
+   cursor: pointer;
+}
+button:hover {
+background-color: #9e9e9e;
+}
+#error-message {
+    color: red;
+    margin-top: 10px;
 }
