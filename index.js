@@ -40,23 +40,31 @@ document.getElementById('registration-form').addEventListener('submit', function
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     const phoneRegex = /^\+212\d{9}$/;
 
-    const errorMessage = document.getElementById('error-message');
-    errorMessage.innerHTML = '';
+    const errorMessage1 = document.getElementById('error-message1');
+    errorMessage1.innerHTML = '';
+    const errorMessage2 = document.getElementById('error-message2');
+    errorMessage2.innerHTML = '';
+    const errorMessage3 = document.getElementById('error-message3');
+    errorMessage3.innerHTML = '';
+    const errorMessage4= document.getElementById('error-message4');
+    errorMessage4.innerHTML = '';
+   
+
 
     if (!nameRegex.test(nom) || !nameRegex.test(prenom)) {
-        errorMessage.innerHTML += 'Le nom et le prénom doivent contenir au moins 3 caractères.<br>';
+        errorMessage1.innerHTML ='Le nom et le prénom doivent contenir au moins 3 caractères.<br>';
     }
 
     if (!cinRegex.test(cin)) {
-        errorMessage.innerHTML += 'Le numéro de CIN doit contenir exactement 12 chiffres.<br>';
+        errorMessage2.innerHTML = 'Le numéro de CIN doit contenir exactement 12 chiffres.<br>';
     }
 
     if (!emailRegex.test(email)) {
-        errorMessage.innerHTML += 'Adresse e-mail non valide.<br>';
+        errorMessage3.innerHTML = 'Adresse e-mail non valide.<br>';
     }
 
     if (!phoneRegex.test(telephone)) {
-        errorMessage.innerHTML += 'Le numéro de téléphone doit commencer par +212 et contenir 12 chiffres au total.<br>';
+        errorMessage4.innerHTML = 'Le numéro de téléphone doit commencer par +212 et contenir 12 chiffres au total.<br>';
     }
 
     if (errorMessage.innerHTML === '') {
