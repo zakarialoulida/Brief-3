@@ -685,7 +685,7 @@ background-color: #FA600A;
     align-items: center;
     gap: 20px;
     color: white;
-    background-image: radial-gradient(#BFD8D5 10%, rgb(14, 15, 15) 100%);
+    background-image: radial-gradient(#98b2ad 1%, #BFD8D5 100%);
     padding: 20px; 
     
 }
