@@ -5,11 +5,7 @@ const nav = document.getElementById("nav");
 icons.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
-/*faqs.forEach(faq =>{
-    faq.addEventListener("click",()=>
-    {faq.classList.toggle("activ");
-    });
-});*/
+
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
@@ -36,7 +32,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     const telephone = document.getElementById('telephone').value;
 
     const nameRegex = /^[A-Za-z]{3,}$/;
-    const cinRegex = /^\d{12}$/;
+    const cinRegex = /^[a-zA-Z]{2}\d{6}$/;
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     const phoneRegex = /^\+212\d{9}$/;
 
@@ -56,7 +52,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     }
 
     if (!cinRegex.test(cin)) {
-        errorMessage2.innerHTML = 'Le numéro de CIN doit contenir exactement 12 chiffres.<br>';
+        errorMessage2.innerHTML = 'Le numéro de CIN doit contenir exactement 2 alphabets et 6  chiffres.<br>';
     }
 
     if (!emailRegex.test(email)) {
