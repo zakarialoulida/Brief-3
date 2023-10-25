@@ -30,7 +30,7 @@ header {
     background: transparent;
     z-index: 101;
     transition: ease .40s;
-    
+
 }
 
 .commandheader {
@@ -38,7 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color:#ACB1D6;
+    background-color: #ACB1D6;
 
 }
 
@@ -124,11 +124,11 @@ header img {
 
     .active #icons::before {
         content: "\2715";
-        transform: scale(1,4);
+        transform: scale(1, 4);
     }
 
-    
-    nav ul{
+
+    nav ul {
         position: fixed;
         top: -100%;
         left: 0%;
@@ -139,7 +139,7 @@ header img {
     }
 
     nav li {
-      padding-top: 10px;
+        padding-top: 10px;
         height: 40px;
     }
 
@@ -151,6 +151,7 @@ header img {
         color: rgb(229, 229, 229);
         display: block;
     }
+
     .active .navcommad li:hover {
         text-decoration: underline rgb(0, 0, 0);
         background-color: #e2e2e2;
@@ -163,7 +164,7 @@ header img {
         background-color: #ACB1D6;
 
     }
-    
+
 }
 
 /**** body***/
@@ -184,7 +185,7 @@ header img {
     align-items: center;
     z-index: 100;
     max-width: 100%;
-color: white;
+    color: white;
 }
 
 .titre {
@@ -357,7 +358,8 @@ svg {
     flex-wrap: wrap;
     gap: 20px;
 }
-.main h4{
+
+.main h4 {
     text-decoration: underline;
 
 }
@@ -368,7 +370,8 @@ svg {
     text-align: center;
     line-height: 35px;
 }
-.list a{
+
+.list a {
     color: #ffffff;
 }
 
@@ -403,31 +406,32 @@ footer {
     padding-top: 10px;
     background-color: #BFD8D5;
     color: #ffffff;
-   
+
 
 }
 
 footer .logofooter img {
     width: 170px;
-    height:170px ;
+    height: 170px;
 }
 
 .logofooter {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     text-align: center;
 }
-.logofooter a{
+
+.logofooter a {
     color: #ffffff;
 }
 
 footer h5 {
-color: #000;
+    color: #000;
     text-align: center;
-background-color: #ffffff;
+    background-color: #ffffff;
 
 }
 
@@ -436,7 +440,7 @@ background-color: #ffffff;
 /**********carte abbonement***********/
 .subscription-section {
     text-align: center;
-    background-color: #D2E9E9;
+    background-color: #fcfcfc;
     height: auto;
 }
 
@@ -444,21 +448,21 @@ background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 100px;
 
     height: auto;
 }
 
 .card {
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 44px;
     margin: 10px;
-    box-shadow: 0 0 100px rgba(104, 100, 95, 0.995);
+    box-shadow: 15px 15px 15px 15px rgba(11, 5, 5, 0.25);
     background-color: #ffffff;
     text-align: center;
-    height: 70vh;
-    width:360px;
+    height: fit-content;
+    width: 360px;
 }
 
 .card h3 {
@@ -550,12 +554,12 @@ button:hover {
 }
 
 /**************programs**********/
-.nosprogramme{
+.nosprogramme {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 50px;
     background-image: linear-gradient(#ACB1D6, #878787);
-  color: white;
+    color: white;
 }
 
 .typeprogram {
@@ -592,12 +596,12 @@ button:hover {
     border-top: 0;
     border-radius: 0 0 52px 52px;
     margin-top: -100px;
-padding: 14px;
+    padding: 14px;
     z-index: 100;
 }
 
 .cardprogram h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000;
 
 }
@@ -608,19 +612,117 @@ padding: 14px;
     color: #000;
 }
 
-.programs{
+.programs {
     display: flex;
     gap: 20px;
-    
+
 
 }
-@media(max-width:712px){
-    .programs{
+
+@media(max-width:712px) {
+    .programs {
         display: flex;
         flex-direction: column;
-      
+
     }
- 
+}
+
+@media(max-width:1100px) {
+
+    /**************programs**********/
+    .nosprogramme {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        font-size: 0.9rem;
+        background-image: linear-gradient(#ACB1D6, #878787);
+        color: white;
+    }
+
+    .typeprogram {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.85rem;
+    }
+
+
+
+    .cardprogram {
+
+        /* height: 420px; */
+        width: 300px;
+        text-align: center;
+    }
+
+    .cardprogram img {
+
+        width: 100%;
+        z-index: 99;
+
+        border-radius: 52px 52px 0px 0px;
+
+    }
+
+    .decripcard {
+        position: relative;
+        width: 100%;
+        height: 24vh;
+        background-color: #ffffff;
+        border: 1px #000 solid;
+        border-top: 0;
+        border-radius: 0 0 52px 52px;
+        margin-top: -135px;
+        padding: 14px;
+        z-index: 100;
+    }
+
+    .cardprogram h2 {
+        font-size: 1rem;
+        color: #000;
+
+    }
+
+    .cardprogram p {
+        font-size: 0.8rem;
+        color: #000;
+    }
+
+
+}
+
+@media(max-width:1100px) {
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        padding: 24px;
+        margin: 10px;
+        box-shadow: 15px 15px 15px 15px rgba(11, 5, 5, 0.25);
+        background-color: #ffffff;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+        color: #000000;
+        text-decoration: underline;
+        padding-bottom: 10px;
+    }
+
+    .card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        color: #000000;
+        margin: 10px 0;
+    }
 }
 
 .program-cards1 {
@@ -633,8 +735,8 @@ padding: 14px;
     padding: 20px;
     color: white;
     background-image: radial-gradient(#d5d2d2 15%, #6b5f5f 90%);
-   
-   
+
+
 }
 
 /**********type 2 des programes******/
@@ -650,7 +752,9 @@ padding: 14px;
     background-image: radial-gradient(#B1BED5 5%, rgb(93, 87, 87) 80%);
     padding: 20px;
 
-} .program-cards2 img{
+}
+
+.program-cards2 img {
     width: 300px;
     height: 364px;
     object-fit: cover;
@@ -670,7 +774,8 @@ padding: 14px;
     padding: 20px;
 
 }
-.program-cards3 img{
+
+.program-cards3 img {
     width: 300px;
     height: 364px;
     object-fit: cover;
@@ -689,27 +794,32 @@ padding: 14px;
     padding: 20px;
 
 }
-.program-cards4 img{
+
+.program-cards4 img {
     width: 300px;
     height: 364px;
     object-fit: cover;
 }
+
 /***********/
-.containerimg{
+.containerimg {
     padding: 10px;
     margin-top: 70px;
     column-count: 3;
     gap: 10px;
     height: fit-content;
 }
-.containerimg img{
-  width: 100%;
+
+.containerimg img {
+    width: 100%;
 }
-.containerimg img:hover{
+
+.containerimg img:hover {
     transform: scale(1.1);
     transition: 1s ease;
 }
 
-.gal39,.gal40{
-height: 290px;
+.gal39,
+.gal40 {
+    height: 290px;
 }
